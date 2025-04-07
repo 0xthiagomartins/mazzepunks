@@ -1,12 +1,12 @@
 pragma solidity ^0.4.8;
-contract CryptoPunksMarket {
+contract MazzePunksMarket {
 
     // You can use this hash to verify the image file containing all the punks
     string public imageHash = "ac39af4793119ee46bbff351d8cb6b5f23da60222126add4268e261199a2921b";
 
     address owner;
 
-    string public standard = 'CryptoPunks';
+    string public standard = 'MazzePunks';
     string public name;
     string public symbol;
     uint8 public decimals;
@@ -56,13 +56,13 @@ contract CryptoPunksMarket {
     event PunkNoLongerForSale(uint indexed punkIndex);
 
     /* Initializes contract with initial supply tokens to the creator of the contract */
-    function CryptoPunksMarket() payable {
+    function MazzePunksMarket() payable {
         //        balanceOf[msg.sender] = initialSupply;              // Give the creator all initial tokens
         owner = msg.sender;
         totalSupply = 10000;                        // Update total supply
         punksRemainingToAssign = totalSupply;
-        name = "CRYPTOPUNKS";                                   // Set the name for display purposes
-        symbol = "Ͼ";                               // Set the symbol for display purposes
+        name = "MAZZEPUNKS";                                   // Set the name for display purposes
+        symbol = "MP";                               // Set the symbol for display purposes
         decimals = 0;                                       // Amount of decimals for display purposes
     }
 
