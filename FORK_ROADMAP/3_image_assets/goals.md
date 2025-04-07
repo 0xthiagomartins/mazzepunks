@@ -1,0 +1,3 @@
+# Objective: Create and Update Image Assets
+
+The objective of this step is to create new image assets for the MazzePunks collection, replacing the original CryptoPunks assets. This includes creating a new collection of 10,000 unique punks, with characteristics and rarities specific to MazzePunks. Additionally, it is necessary to generate a new SHA256 hash for the images and update this hash in the contract to ensure the authenticity of the collection. 
